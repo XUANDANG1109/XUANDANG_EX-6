@@ -91,7 +91,7 @@ else:
     print("Same price, take whatever you want")
 # *********************************************************
 
-# Phase 1 solution
+# Phase 1 solution ( Ex 5)
 
 n = int(input("How manny time to roll a dice"))
 dice_sum = 0
@@ -127,3 +127,86 @@ for n in range (5):
     cities.append(input("Give me the name of the city"))
 for city in cities:
     print(city)
+# *************************************
+
+# Phase 1 (Ex6)
+import math
+import random
+def dice_roll():
+    return random.randint(1,6)
+
+while True:
+    dice = dice_roll()
+    print(f"Dice {dice}")
+    if dice == 6:
+        break
+
+# Phase 2:
+def dice_roll_max():
+    return random.randint(1,n)
+n = int(input("How many sides in your dice?"))
+
+while True:
+    dice = dice_roll_max()
+    print(f"Dice {dice}")
+    if dice == n:
+        break
+
+# Phase 3:
+def gallons_to_litters(gallons)
+    return 3.7654 * gallons
+
+while True:
+    g = float(input("How many gallons?"))
+    if g < 0:
+        break
+   # print(f"{g} gallons are {gallons_to_litters(0):.1f}") not done
+
+# Phase 4:
+def sum(l):
+    s = 0
+    for e in l:
+        s +=e
+    return s
+
+numberlist = []
+for n in range (10):
+    numberlist.append(random.randint(1,10))
+print("List is")
+for i in range (len(numberlist)):
+    print(numberlist[i], end="")
+# print(f"\nSum is {numberlist}") not done
+
+# Phase 5:
+def make_even(l):
+    result = []
+    for i in range(len(l)):
+        if l[i] % 2 == 0:
+            result.append(l[i])
+    return result
+
+def print_list(prompt,l):
+    print(prompt, end=": ")
+    for i in range(len(l)):
+        print(l[i], end=" ")
+
+numberlist = []
+for n in range(10):
+    numberlist.append(random.randint(1,99))
+#not done
+
+# Phase 6
+def pizza_effiency (0,price):
+    return price / math.pi * (d/200.)**2
+
+p1_d = float(input("give the diameter of the first pizza"))
+p1_price = float(input("give the price 1"))
+p2_d = float(input("give the diameter of the second pizza"))
+p2_price = float(input("give the price 2"))
+
+
+if pizza_effiency(p1_d,p1_price) < pizza_effiency(p2_d,p2_price):
+    print("First pizza give better performance")
+else:
+    print("Second pizza give better performance")
+
