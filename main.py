@@ -89,3 +89,41 @@ elif price (pizza1,price1,1) < price(pizza2,price2,2):
     print("Pizza 1 is cheaper than pizza 2")
 else:
     print("Same price, take whatever you want")
+# *********************************************************
+
+# Phase 1 solution
+
+n = int(input("How manny time to roll a dice"))
+dice_sum = 0
+for i in range(n):
+    dice = random.randint(1,6)
+    print(str(dice), end=" ")
+    dice_sum = dice_sum + dice
+print(f"\nThe sum off the dice is: {dice_sum}")
+
+# Phase 2 solution
+number = []
+prompt = "Give me a number"
+s = input(prompt)
+while s!= "":
+    number.append(float(s))
+    s = input(prompt)
+number.sort(reverse=True)
+print(number[0:min(5,len(number))])
+# or print(number[0:5])
+
+# Phase 3
+n = int(input("Give the number:"))
+for i in range(2,int(math.sqrt(n)+1)):
+    if n % i ==0:
+        print(f"Divide by {i}")
+        break
+else:
+    print("This is a prime number")
+
+# Phase 4:
+cities = []
+for n in range (5):
+    cities.append(input("Give me the name of the city"))
+for city in cities:
+    print(city)
